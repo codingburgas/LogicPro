@@ -3,11 +3,14 @@
 <br/>
 
 ```
-         _      ___ ____  ____      _    ____ __   __
-        | |    |_ _| __ )|  _ \    / \  |  _ \\ \ / /
-        | |     | ||  _ \| |_) |  / _ \ | |_) |\ V /
-        | |___  | || |_) |  _ <  / ___ \|  _ <  | |
-        |_____||___|____/|_| \_\/_/   \_\_| \_\ |_|
+       __        __  ___   ____  
+      / /       /  |/  /  / ___| 
+     / /       / /|_/ /   \___ \ 
+    / /___    / /  / /     ___) |
+   /_____|   /_/  /_/     |____/ 
+                                 
+   >— — — — — — — — — — — — — — — <
+             LOGIC PRO v1.0
 ```
 
 **Library Management System** - a minimalist desktop application for library management with a dark GUI powered by Raylib.
