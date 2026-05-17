@@ -1045,7 +1045,7 @@ void ScreenBills(AppState& s, Font font, Toast& toast) {
     for (const auto& b:s.bills) {
         if (b.username==s.currentUser&&!b.paid) {
             char row[256];
-            snprintf(row,sizeof(row),"%-36s  %d lv",b.bookTitle.c_str(),b.amount);
+            snprintf(row,sizeof(row),"%-36s  %d Euro",b.bookTitle.c_str(),b.amount);
             rows.push_back(row);
             total+=b.amount;
         }
@@ -1070,7 +1070,7 @@ void ScreenBills(AppState& s, Font font, Toast& toast) {
         DrawRectangle((int)CX,WIN_H-81,(int)CW,1,COL_BORDER);
 
         char totalStr[64];
-        snprintf(totalStr,sizeof(totalStr),"Total outstanding: %d lv",total);
+        snprintf(totalStr,sizeof(totalStr),"Total outstanding: %d Euro",total);
         DrawLabel(totalStr,(int)CX+24,WIN_H-56,FONT_MD,
                   total>0?COL_WARNING:COL_SUCCESS,font);
         DrawLabel("Contact the librarian to pay your fines.",
