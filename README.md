@@ -24,13 +24,13 @@
 
 ---
 
-## ✨ What is this
+## What is this
 
 A full-fledged library management system with a graphical user interface. Written in **C++17** using **Raylib 5.0**. 
 No browsers, no Electron — a native binary that launches instantly. It features two user roles, a full lifecycle for book management, and a fine system for overdue returns.
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Requirements
 
@@ -74,73 +74,73 @@ cd library-app && make
 
 ---
 
-## 🔐 Default Credentials
+## Default Credentials
 
 | Role | Login | Password |
 |:---|:---|:---|
-| 👑 Administrator | `admin` | `12345` |
-| 👤 User | *registration* | *your choice* |
+| Administrator | `admin` | `12345` |
+| User | *registration* | *your choice* |
 
 ---
 
-## ⚙️ Features
+## Features
 
-### 👑 Administrator Mode
+### Administrator Mode
 
 ```
-📚 Catalog Management
+Catalog Management
   ├── Add a book            (title, author, genre, date)
   ├── Delete a book         (with confirmation)
   └── View catalog          (with filters)
 
-🗄️  Archive
+Archive
   └── History of all issued and deleted books
 
-💸 Fine System
+Fine System
   ├── Assign fine to a user
   ├── Calculation: 5 BGN × number of overdue days
   └── Automatic bill creation
 ```
 
-### 👤 User Mode
+### User Mode
 
 ```
-🔍 View Books
+View Books
   └── Filter by: author / genre / date / title
 
-📖 Borrow a Book
+Borrow a Book
   └── Return period — 7 days
 
-🧾 My Bills
+My Bills
   └── View accrued fines with the total amount
 ```
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 library/
 │
-├── 📄 CMakeLists.txt          # Build (automatically downloads Raylib)
-├── 📄 Makefile                # Alternative for Linux/macOS
+├── CMakeLists.txt          # Build (automatically downloads Raylib)
+├── Makefile                # Alternative for Linux/macOS
 │
 ├── include/
-│   ├── 🔷 types.h             # Data structures: Book, User, Bill, AppState
-│   ├── 🔷 ui.h                # UI primitives: buttons, input fields, toasts
-│   ├── 🔷 logic.h             # Business logic: login, search, fines
-│   └── 🔷 screens.h           # Declarations of all screens
+│   ├── types.h             # Data structures: Book, User, Bill, AppState
+│   ├── ui.h                # UI primitives: buttons, input fields, toasts
+│   ├── logic.h             # Business logic: login, search, fines
+│   └── screens.h           # Declarations of all screens
 │
 └── src/
-    ├── 🔶 main.cpp            # Entry point, game loop, screen routing
-    ├── 🔶 ui.cpp              # Implementation of UI components
-    ├── 🔶 screens.cpp         # All application screens
-    └── 🔶 logic.cpp           # Implementation of business logic
+    ├── main.cpp            # Entry point, game loop, screen routing
+    ├── ui.cpp              # Implementation of UI components
+    ├── creens.cpp         # All application screens
+    └── logic.cpp           # Implementation of business logic
 ```
 
 ---
 
-## 🎨 Design
+## Design
 
 **UI Components:**
 
@@ -152,7 +152,7 @@ library/
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 The application is built as a **Finite State Machine (FSM)**:
 
@@ -173,7 +173,7 @@ Each screen is a separate function in `screens.cpp.` Switching screens is done b
 
 ---
 
-## 📐 Fine Formula
+## Fine Formula
 
 fine formula is:
 
@@ -187,7 +187,7 @@ int CalculateFine(int days) {
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a branch: `git checkout -b feature/my-feature`
@@ -197,7 +197,7 @@ int CalculateFine(int days) {
 
 ---
 
-## 📝 License
+## License
 
 MIT License — do whatever you want, mention the author.
 ---
