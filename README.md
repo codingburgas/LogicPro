@@ -101,7 +101,7 @@ Archive
 
 Fine System
   ├── Assign fine to a user
-  ├── Calculation: 5 BGN × number of overdue days
+  ├── Calculation: 5 Euro × number of overdue days
   └── Automatic bill creation
 ```
 
@@ -185,7 +185,7 @@ int CalculateFine(int days) {
     if (days <= 0) return 0;
     return 5 + CalculateFine(days - 1);
 }
-// 1 day = 5 BGN, 5 days = 25 BGN, 10 days = 50 BGN
+// 1 day = 5 Euro, 5 days = 25 Euro, 10 days = 50 Euro
 ```
 
 ---
