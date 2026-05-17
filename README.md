@@ -142,18 +142,6 @@ library/
 
 ## 🎨 Design
 
-The color palette is built on the **"less is more"** principle:
-
-| Purpose | Color | HEX |
-|:---|:---:|:---|
-| Background | ⬛ | `#0C0C10` |
-| Panels | ⬛ | `#14141C` |
-| Cards | ⬛ | `#1C1C26` |
-| Accent | 🔵 | `#78A0FF` |
-| Success | 🟢 | `#50C878` |
-| Error | 🔴 | `#DC5050` |
-| Warning | 🟡 | `#DCB03C` |
-
 **UI Components:**
 
 - Input fields with a blinking cursor and password masking (*)
@@ -187,7 +175,7 @@ Each screen is a separate function in `screens.cpp.` Switching screens is done b
 
 ## 📐 Fine Formula
 
-Штраф рассчитывается рекурсивно:
+fine formula is:
 
 ```cpp
 int CalculateFine(int days) {
